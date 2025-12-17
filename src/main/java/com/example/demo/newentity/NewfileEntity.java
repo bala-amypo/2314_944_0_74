@@ -13,10 +13,19 @@ public class NewfileEntity{
     @Email(message = "Invalid format")
     private String email;
 
-    public NewfileEntity(Long id,String message,String email){
+    public NewfileEntity(Long id, @NotBlank(message = "Should not contain spaces")String name,
+    @NotBlank(message = "Email dosent not contain White Spaces")
+    @Email(message = "Invalid format") String email){
         this.id = id;
         this.name = name;
         this.email = email;
+    }
+
+    public Long getId(){
+        return id;
+    }
+    public void setId(){
+        this.id = id;
     }
     
 
