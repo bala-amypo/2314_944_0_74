@@ -3,14 +3,15 @@ package com.example.demo.entity;
 import java.time.LocalDate;
 
 public class StudentEntity {
+    private Long id;
     private String name;
-    private int id;
+    private String email;
     private LocalDate dob;
     private float cgpa;
     public String getName() {
         return name;
     }
-    public int getId() {
+    public Long getId() {
         return id;
     }
     public LocalDate getDob() {
