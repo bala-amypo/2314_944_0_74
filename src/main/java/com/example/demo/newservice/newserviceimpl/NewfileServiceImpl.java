@@ -17,7 +17,7 @@ public class NewfileServiceImpl implements NewfileService{
     }
     @Override
     public NewfileEntity getIdvalue(Long id){
-
+        return rep.
     }
     @Override
     public List<NewfileEntity> getall(){
