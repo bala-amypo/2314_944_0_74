@@ -1,6 +1,6 @@
 package com.example.demo.newservice;
 import com.example.demo.newentity.NewfileEntity;
-
+import java.util.*;
 public interface NewfileService{
     NewfileEntity savedata(NewfileEntity newfile);
     NewfileEntity getIdvalue(Long id);
