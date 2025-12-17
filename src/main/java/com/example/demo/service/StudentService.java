@@ -1,3 +1,4 @@
-public class StudentService{
-
+public interface StudentService{
+    StudentEntity insertStudent(StudentEntity st);
+    List<Stud
 }
