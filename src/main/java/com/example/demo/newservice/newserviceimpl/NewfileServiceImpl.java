@@ -17,18 +17,25 @@ public class NewfileServiceImpl implements NewfileService{
     }
     @Override
     public NewfileEntity getIdvalue(Long id){
-        return rep.
+        return rep.findById(id);
     }
     @Override
     public List<NewfileEntity> getall(){
-
+        return rep.findAll();
     }
     @Override
     public NewfileEntity update(Long id,NewfileEntity newfile){
+        NewfileEntity existing = rep.findById(id).orElse(null);
 
+        if (existing != null) {
+            existing.setName(newfile.getName());
+            existing.setEmail(newfile.getEmail());
+            return rep.save(existing); // in-built save()
+        }
+        return null;
     }
     @Override
     public void del(Long id){
-
+        rep.deleteById(id); 
     }
 }
