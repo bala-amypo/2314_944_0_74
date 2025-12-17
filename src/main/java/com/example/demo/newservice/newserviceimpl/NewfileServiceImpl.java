@@ -1,17 +1,28 @@
 package com.example.demo.newservice.newserviceimpl;
 
 import com.example.demo.NewfileEntity;
-
+import java.util.*;
+import com.example.demo.newservice.NewfileService;;
+@Service
 public class NewfileServiceImpl implements NewfileService{
     @Override
-    NewfileEntity savedata(NewfileEntity newfile){
+    public NewfileEntity savedata(NewfileEntity newfile){
 
     }
     @Override
-    NewfileEntity getIdvalue(Long id){
-        
+    public NewfileEntity getIdvalue(Long id){
+
     }
-    List<NewfileEntity> getall();
-    NewfileEntity update(Long id,NewfileEntity newfile);
-    void del(Long id);
+    @Override
+    public List<NewfileEntity> getall(){
+
+    }
+    @Override
+    public NewfileEntity update(Long id,NewfileEntity newfile){
+
+    }
+    @Override
+    public void del(Long id){
+
+    }
 }
