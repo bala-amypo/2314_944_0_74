@@ -25,17 +25,17 @@ public class NewfileController{
         return src.getall();
     }
     @GetMapping("/getid/{id}")
-    public NewfileEntity sepData(@PathVariable int id){
+    public NewfileEntity sepData(@PathVariable Long id){
         return src.getIdvalue(id);
 
     }
     @PutMapping("/update/{id}")
-    public NewfileEntity updateData(@PathVariable int id,@RequestBody Studententity st){
+    public NewfileEntity updateData(@PathVariable Long id,@RequestBody NewfileEntity st){
         return src.update(id,st);
     }
     @DeleteMapping("/delete/{id}")
-    public void del(@PathVariable int id){
-         src.delete(id);
+    public void del(@PathVariable Long id){
+         src.deletedata(id);
     }
 
     
