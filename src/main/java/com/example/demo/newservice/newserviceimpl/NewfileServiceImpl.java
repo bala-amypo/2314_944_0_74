@@ -30,7 +30,7 @@ public class NewfileServiceImpl implements NewfileService{
         if (existing != null) {
             existing.setName(newfile.getName());
             existing.setEmail(newfile.getEmail());
-            return rep.save(existing); // in-built save()
+            return rep.save(existing);
         }
         return null;
     }
