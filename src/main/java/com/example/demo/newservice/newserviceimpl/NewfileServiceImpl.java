@@ -1,6 +1,6 @@
 package com.example.demo.newservice.newserviceimpl;
 
-import com.example.demo.NewfileEntity;
+import com.example.demo.newentity.NewfileEntity;
 import java.util.*;
 import com.example.demo.newservice.NewfileService;;
 @Service
@@ -13,7 +13,7 @@ public class NewfileServiceImpl implements NewfileService{
     }
     @Override
     public NewfileEntity savedata(NewfileEntity newfile){
-
+        return rep.save(newfile);
     }
     @Override
     public NewfileEntity getIdvalue(Long id){
