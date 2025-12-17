@@ -7,7 +7,7 @@ import com.example.demo.newservice.NewfileService;;
 public class NewfileServiceImpl implements NewfileService{
     @Override
     public NewfileEntity savedata(NewfileEntity newfile){
-
+        
     }
     @Override
     public NewfileEntity getIdvalue(Long id){
